@@ -1,0 +1,40 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives / packages
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.nupkg
+
+# Logs / temp
+*.log
+*.tmp
+tmp/
+temp/
+~*
+
+# Editor/project files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# DOSBox-X outputs
+capture/
+*.sav
+*.cfg
+*.conf.backup
+
+# Windows prefetch & cache (don’t version these)
+*.pf
+
+# Optional: keep binaries out if you plan to store notes only
+#DOS/
+#WIN_XP/
