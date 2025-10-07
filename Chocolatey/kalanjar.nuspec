@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kalanjar</id>
+    <version>1.1.0</version>
+    <title>Kalanjar - Persian DOS Chatbot</title>
+    <authors>Farhad Dadgostar</authors>
+    <owners>Foadsf</owners>
+    <projectUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation</projectUrl>
+    <projectSourceUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation</packageSourceUrl>
+    <docsUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation#readme</docsUrl>
+    <bugTrackerUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation/issues</bugTrackerUrl>
+    <description>Kalanjar (کلنجار) is an early Persian (Farsi) chatbot from the MS-DOS era (circa 1992-1993), created by Farhad Dadgostar at Isfahan University of Technology.
+
+This package provides a convenient launcher that runs Kalanjar in DOSBox-X with proper Persian text rendering. The launcher automatically configures DOSBox-X to use text-mode output (OpenGL) for correct display of Persian text and TUI box-drawing characters.
+
+Simply run 'kalanjar' from any directory to start the chatbot. The program will mount your current directory as C: and the Kalanjar installation as D:, then automatically launch the chatbot.
+
+This is a historical preservation package - one of the earliest examples of Persian-language conversational AI.</description>
+    <summary>Historic Persian DOS-era chatbot with DOSBox-X integration</summary>
+    <tags>dos persian farsi chatbot ai dosbox-x historical preservation tui</tags>
+    <licenseUrl>https://github.com/Foadsf/Kalanjar-DOS-preservation#license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="dosbox-x" />
+    </dependencies>
+    <releaseNotes>## Version 1.1.0
+- Fixed Persian text rendering by using OpenGL text-mode output
+- Added automatic DOSBox-X detection from multiple installation sources
+- Included both DOS (KLUDGE.EXE) and Windows XP wrapper versions
+- No custom fonts or TSR loaders required
+- Perfect rendering of Persian text and TUI box-drawing characters</releaseNotes>
+  </metadata>
+  <files>
+    <file src="kalanjar-launcher.bat" target="" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

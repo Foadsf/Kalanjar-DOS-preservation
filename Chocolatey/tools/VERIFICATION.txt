@@ -1,0 +1,39 @@
+VERIFICATION
+
+Kalanjar v1.1.0 is downloaded from the official GitHub release:
+https://github.com/Foadsf/Kalanjar-DOS-preservation/releases/download/v1.1.0/kalanjar-original-dos-winxp.zip
+
+To verify the download:
+
+1) Download the ZIP manually from the release page
+2) Compute the SHA256 hash:
+   - PowerShell: Get-FileHash -Algorithm SHA256 kalanjar-original-dos-winxp.zip
+   - Expected: 5400225CDC4125811C32E02FA61E42D120DE5522A43F579E04DCCDF2175C9A8B1
+
+3) The checksum is also specified in chocolateyinstall.ps1
+
+CONTENTS:
+
+The archive contains:
+- DOS/KLUDGE.EXE (main executable)
+  SHA256: 4eb8805401645ceb7e60b7e476e1e87a9fc3142987976ee69ca6b88c6361922c
+- DOS/*.DAT (language/logic files)
+- DOS/Run.bat (launcher script)
+- Win_XP/kalanjar.exe (Windows wrapper - optional)
+
+ORIGINAL AUTHOR:
+
+Kalanjar was created in 1992-1993 by Farhad Dadgostar at Isfahan University
+of Technology. This is a historical preservation package.
+
+LinkedIn: https://www.linkedin.com/in/fdadgostar/
+
+LAUNCHER:
+
+The Chocolatey package includes a launcher batch file that:
+- Detects DOSBox-X installation from multiple sources
+- Configures OpenGL text-mode output for proper Persian rendering
+- Mounts the current directory as C: and Kalanjar files as D:
+- Automatically launches KLUDGE.EXE via RUN.BAT
+
+No system changes are made beyond Chocolatey package files.
